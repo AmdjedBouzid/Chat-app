@@ -2,32 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bg-blue-1 {
+    background-color: #1e40af; /* Replace with your custom blue color */
+  }
+  .hover\:bg-red-1:hover {
+    background-color: #ef4444; /* Replace with your custom red color */
+  }
+  .text-body-bold {
+    font-weight: bold; /* Replace with your custom text style */
+  }
+  .text-base-medium {
+    font-size: 1rem; /* Adjust to your needs */
+    font-weight: 500;
   }
 }
