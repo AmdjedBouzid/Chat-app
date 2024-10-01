@@ -10,7 +10,7 @@ export const connectDB = async () => {
     return;
   }
   try {
-    console.log(process.env.NEXT_PUBLIC_MONGODB_URL);
+    // console.log(process.env.NEXT_PUBLIC_MONGODB_URL);
     await mongoose.connect(process.env.NEXT_PUBLIC_MONGODB_URL, {
       dbName: "Cluster0", // Replaced space with underscore
       useNewUrlParser: true, // Corrected option name
@@ -22,3 +22,4 @@ export const connectDB = async () => {
     console.log(error);
   }
 };
+//mongodb+srv://Amdjed:<password>@cluster0.arwblcy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

@@ -1,0 +1,13 @@
+.listparent {
+  height: 96vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex; /* Add display: flex or block */
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .listparent {
+    position: fixed;
+  }
+}

@@ -1,0 +1,209 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.fitstChildleft {
+  display: flex; /* Enable flexbox */
+  height: 100%;
+  width: 35%;
+  background-color: #7a55fe;
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Center items horizontally */
+  flex-direction: column; /* Arrange items in a column */
+  gap: 70px;
+  position: relative;
+}
+
+.fitstChildleft img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+.infouser {
+  height: 200px;
+
+  width: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.infouser h1 {
+  font-weight: 900; /* Make the text extra bold */
+  font-size: 60px; /* Large size */
+  text-transform: uppercase; /* Make the text all caps for a logo feel */
+  letter-spacing: 3px; /* Add spacing between letters for a bold logo look */
+  color: #333; /* Choose a strong color, or change to a gradient for more style */
+  text-align: center; /* Center-align the text */
+  background: black; /* Gradient color for a logo effect */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text itself transparent */
+  font-family: "Montserrat", sans-serif; /* Use a clean, bold font like Montserrat */
+  display: inline-block; /* If you want to give it a more compact logo style */
+  padding: 5px 10px; /* Add some internal spacing */
+  border-radius: 5px; /* Slightly round the corners */
+}
+
+.infouser h1::before {
+  content: "";
+  display: block;
+  width: 50px; /* Decorative line width */
+  height: 5px; /* Line height */
+  background-color: black; /* Same color as gradient */
+  margin: 0 auto 10px; /* Center the line and add space below */
+}
+
+.fitstChildrihht {
+  height: 100%;
+  width: 65%;
+
+  display: flex;
+  justify-content: center;
+}
+.form {
+  padding-top: 30px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.inputname {
+  height: 60px;
+  width: 500px;
+  /* background-color: #7a55fe; */
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.inputname input {
+  height: 30px;
+  width: 400px;
+  border: none;
+  font-size: 30x;
+  background-color: transparent;
+  outline: none;
+}
+.inputname input::placeholder {
+  font-size: 30px;
+  color: rebeccapurple;
+}
+.inputname:focus {
+  outline: none;
+}
+.uplowdphoto {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  align-items: center;
+}
+.uplowdphoto img {
+  height: 240px;
+  width: 240px;
+}
+.uplowdphoto h1 {
+  font-size: 40px;
+}
+.icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.setting {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  padding-left: 70px;
+  display: none;
+  position: absolute;
+}
+.returnsetting {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.form img {
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .fitstChildrihht {
+    display: none;
+    width: 0%;
+  }
+  .fitstChildleft {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .infouser h1 {
+    font-weight: 30px;
+  }
+  .fitstChildleft img {
+    height: 200px;
+    width: 200px;
+  }
+  .icon {
+    display: block;
+  }
+  .form {
+    padding-top: 30px;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputname {
+    height: 40px;
+    width: 300px;
+    /* background-color: #7a55fe; */
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 3px 10px 3px rgba(0, 0, 0, 0.3);
+  }
+  .inputname input {
+    height: 20px;
+    width: 200px;
+    border: none;
+    font-size: 30x;
+
+    outline: none;
+  }
+  .inputname input::placeholder {
+    font-size: 30px;
+    color: rebeccapurple;
+  }
+  .inputname:focus {
+    outline: none;
+  }
+  .uplowdphoto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    align-items: center;
+  }
+  .uplowdphoto img {
+    height: 140px;
+    width: 140px;
+  }
+  .uplowdphoto h1 {
+    font-size: 20px;
+  }
+  .setting {
+    display: block;
+  }
+}

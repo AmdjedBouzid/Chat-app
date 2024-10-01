@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
-
+// import ToastContext from "../_componnets/ToastContext";
+// import Provider from "../_componnets/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-purple-600`}>{children}</body>
+      <body className={`${inter.className} bg-purple-600`}>
+        {/* <Provider> */}
+        {/* <ToastContext /> */}
+        {children}
+        {/* </Provider> */}
+      </body>
     </html>
   );
 }
